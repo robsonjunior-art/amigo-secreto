@@ -33,4 +33,4 @@ function sortearAmigo() {
   let sorteado = nomes[indice];
 
   document.getElementById("resultado").innerText = "Amigo sorteado: " + sorteado;
-}
+} 
