@@ -16,11 +16,12 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Inter", sans-serif;
 }
 
 .main-content {
@@ -34,9 +35,15 @@ body {
 .header-banner {
     flex: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
+}
+
+.header-banner img {
+    max-width: 200px;
+    margin-top: 20px;
 }
 
 /* Seção de entrada */
@@ -76,5 +83,77 @@ body {
     justify-content: center;
     width: 100%;
     max-width: 600px;
-    margin-top: 2
+    margin-top: 20px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-add {
+    padding: 10px 20px;
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Botão sortear amigo */
+.button-draw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 10px 20px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    border: 2px solid #000;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-draw img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-size: 18px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
 }
